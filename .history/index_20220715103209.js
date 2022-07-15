@@ -1,10 +1,8 @@
-const fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "Sai", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
+const fighters = ["🐉", "🐥", "🐊","💩", "🦍", "🐢", "🐩", "🦭", "🦀", "🐝", "🤖", "🐘", "🐸", "🕷","🐆", "🦕", "🦁"]
 
 const stageEl = document.getElementById("stage")
 const fightButton = document.getElementById("fightButton")
 
-const emogiTest = document.getElementById("emogiTest")
-emogiTest.innerHTML ="Available Emoji's:<br/>"+fighters;
 
 
 fightButton.addEventListener("click", function() {
@@ -29,7 +27,5 @@ fightButton.addEventListener("click", function() {
     }else {    
     stageEl.textContent=fighters[x]+" VS "+fighters[y]
     }
-
- 
     
 })

@@ -4,8 +4,9 @@ const stageEl = document.getElementById("stage")
 const fightButton = document.getElementById("fightButton")
 
 const emogiTest = document.getElementById("emogiTest")
-emogiTest.innerHTML ="Available Emoji's:<br/>"+fighters;
-
+emogiTest.textContent="Available Emoji's:" +document.write ("<br>");+fighters;
+document.write ("<br>");
+emogiTest.textContent="Available Emoji's:" +fighters;
 
 fightButton.addEventListener("click", function() {
     // Challenge:
